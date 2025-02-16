@@ -1,63 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Card</title>
+    <title>Sarl Oasis Aluminium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
-        <img src="logo.png" alt="Company Logo" class="logo">
-        <div class="content">
-            <h2>Sarl Oasis Aluminium</h2>
-            <p class="description">
-                We provide top-quality services tailored to your business needs. 
-                Our team is committed to excellence and customer satisfaction.
-            </p>
-            
-            <h3>📞 Contact Us:</h3>
-            <div class="contact-list">
-                <p><strong>Hocine:</strong> <a href="tel:+123456789">+123 665 309 832</a></p>
-                <p><strong>Jane Smith:</strong> <a href="tel:+987654321">+987 654 321</a></p>
-                <p><strong>Mike Johnson:</strong> <a href="tel:+567890123">+567 890 123</a></p>
-            </div>
-
-            <h3>✉️ Email:</h3>
-            <p>
-                <a href="Aluminium@oasis-dz.com" class="icon-link">
-                    <img src="icons/email.png" alt="Email"> Aluminium@oasis-dz.com
-                </a>
-            </p>
-
-            <h3>💬 WhatsApp:</h3>
-            <div class="social-links">
-                <a href="https://wa.me/+213551202690" target="_blank" class="icon-link">
-                    <img src="icons/whatsapp.png" alt="WhatsApp"> John Doe
-                </a>
-                <a href="https://wa.me/987654321" target="_blank" class="icon-link">
-                    <img src="icons/whatsapp.png" alt="WhatsApp"> Jane Smith
-                </a>
-                <a href="https://wa.me/567890123" target="_blank" class="icon-link">
-                    <img src="icons/whatsapp.png" alt="WhatsApp"> Mike Johnson
-                </a>
-            </div>
-
-            <h3>📍 Our Location:</h3>
-            <p>
-                <a href="https://maps.google.com/maps/search/SARL%20OASIS%20Aluminium/@36.6853,3.2627,17z?hl=en" target="_blank" class="icon-link">
-                    <img src="icons/maps.png" alt="Maps"> Find Us on Google Maps
-                </a>
-            </p>
-
-            <h3>🔗 Follow Us:</h3>
-            <p>
-                <a href="https://www.facebook.com/share/15yebd1aUX/?mibextid=qi2Omg" target="_blank" class="icon-link">
-                    <img src="icons/facebook.png" alt="Facebook"> My Company
-                </a>
-            </p>
-        </div>
+    <!-- Préchargeur -->
+    <div class="preloader">
+        <div class="progress-bar"></div>
     </div>
+
+    <!-- En-tête -->
+    <header class="main-header">
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="slogan">Sarl Oasis Aluminium</span>
+        </div>
+        <h1>Votre partenaire en menuiserie aluminium</h1>
+    </header>
+
+    <main>
+        <!-- Section Description -->
+        <section class="description animated-section">
+            <h2>Qui sommes-nous ?</h2>
+            <p>Spécialistes de la menuiserie aluminium depuis 15 ans, nous conjugons innovation et savoir-faire artisanal pour répondre à tous vos projets de construction et rénovation.</p>
+        </section>
+
+        <!-- Section Contacts -->
+        <section id="contacts" class="animated-section">
+            <!-- Téléphones -->
+            <div class="contact-card">
+                <div class="contact-item">
+                    <img src="icons/phone.png" alt="Téléphone" class="contact-icon">
+                    <div class="contact-details">
+                        <span class="contact-label">Commercial</span>
+                        <a href="tel:+213550123456" class="contact-link">+213 550 12 34 56</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="icons/phone.png" alt="Téléphone" class="contact-icon">
+                    <div class="contact-details">
+                        <span class="contact-label">Support technique</span>
+                        <a href="tel:+213550123457" class="contact-link">+213 550 12 34 57</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="icons/phone.png" alt="Téléphone" class="contact-icon">
+                    <div class="contact-details">
+                        <span class="contact-label">Direction</span>
+                        <a href="tel:+213550123458" class="contact-link">+213 550 12 34 58</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email et Localisation -->
+            <div class="contact-card">
+                <div class="contact-item">
+                    <img src="icons/email.png" alt="Email" class="contact-icon">
+                    <div class="contact-details">
+                        <span class="contact-label">Email professionnel</span>
+                        <a href="mailto:contact@oasis-aluminium.dz" class="contact-link">contact@oasis-aluminium.dz</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="icons/maps.png" alt="Localisation" class="contact-icon">
+                    <div class="contact-details">
+                        <span class="contact-label">Notre usine</span>
+                        <a href="https://goo.gl/maps/xyz" target="_blank" class="contact-link">Zone Industrielle, Alger</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-card whatsapp-section">
+                <div class="contact-item">
+                    <img src="icons/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                    <div class="contact-details">
+                        <a href="https://wa.me/+213550123456" target="_blank" class="contact-link">Service commercial</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="icons/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                    <div class="contact-details">
+                        <a href="https://wa.me/+213550123457" target="_blank" class="contact-link">Support client</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="icons/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                    <div class="contact-details">
+                        <a href="https://wa.me/+213550123458" target="_blank" class="contact-link">Service après-vente</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Sarl Oasis Aluminium - Tous droits réservés</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
